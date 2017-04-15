@@ -1,0 +1,308 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F684 ]
+[d frameptr 6 ]
+"62 /opt/microchip/xc8/v1.40/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /opt/microchip/xc8/v1.40/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 /opt/microchip/xc8/v1.40/sources/pic/eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"39 /home/waldo/Documents/Geeken/Projects/PETOETJE/PIC16_L6206.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"104
+[v _configure_ports configure_ports `(v  1 e 1 0 ]
+"126
+[v _configure_adc configure_adc `(v  1 e 1 0 ]
+"136
+[v _configure_tmr configure_tmr `(v  1 e 1 0 ]
+"149
+[v _configure_pwm configure_pwm `(v  1 e 1 0 ]
+"173
+[v _do_adc do_adc `(ui  1 e 2 0 ]
+"185
+[v _set_duty set_duty `(v  1 e 1 0 ]
+"192
+[v _inter inter `II(v  1 e 1 0 ]
+"158 /opt/microchip/xc8/v1.40/include/pic16f684.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S78 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"173
+[u S85 . 1 `S78 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES85  1 e 1 @5 ]
+"207
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S19 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+]
+"222
+[u S26 . 1 `S19 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES26  1 e 1 @7 ]
+[s S266 . 1 `uc 1 RAIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RAIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"298
+[s S275 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S280 . 1 `S266 1 . 1 0 `S275 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES280  1 e 1 @11 ]
+[s S202 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 OSFIF 1 0 :1:2 
+`uc 1 C1IF 1 0 :1:3 
+`uc 1 C2IF 1 0 :1:4 
+`uc 1 CCP1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 EEIF 1 0 :1:7 
+]
+"375
+[s S211 . 1 `uc 1 T1IF 1 0 :1:0 
+`uc 1 T2IF 1 0 :1:1 
+`uc 1 . 1 0 :3:2 
+`uc 1 ECCPIF 1 0 :1:5 
+]
+[u S216 . 1 `S202 1 . 1 0 `S211 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES216  1 e 1 @12 ]
+[s S298 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1GE 1 0 :1:6 
+`uc 1 T1GINV 1 0 :1:7 
+]
+"473
+[s S306 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[u S310 . 1 `S298 1 . 1 0 `S306 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES310  1 e 1 @16 ]
+[s S356 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"549
+[s S360 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S368 . 1 `S356 1 . 1 0 `S360 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES368  1 e 1 @18 ]
+"604
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @19 ]
+[s S326 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DCB 1 0 :2:4 
+`uc 1 PM 1 0 :2:6 
+]
+"638
+[s S330 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[u S339 . 1 `S326 1 . 1 0 `S330 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES339  1 e 1 @21 ]
+[s S385 . 1 `uc 1 PDC 1 0 :7:0 
+`uc 1 PRSEN 1 0 :1:7 
+]
+"717
+[s S388 . 1 `uc 1 PDC0 1 0 :1:0 
+`uc 1 PDC1 1 0 :1:1 
+`uc 1 PDC2 1 0 :1:2 
+`uc 1 PDC3 1 0 :1:3 
+`uc 1 PDC4 1 0 :1:4 
+`uc 1 PDC5 1 0 :1:5 
+`uc 1 PDC6 1 0 :1:6 
+]
+[u S396 . 1 `S385 1 . 1 0 `S388 1 . 1 0 ]
+[v _PWM1CONbits PWM1CONbits `VES396  1 e 1 @22 ]
+[s S411 . 1 `uc 1 PSSBD 1 0 :2:0 
+`uc 1 PSSAC 1 0 :2:2 
+`uc 1 ECCPAS 1 0 :3:4 
+`uc 1 ECCPASE 1 0 :1:7 
+]
+"788
+[s S416 . 1 `uc 1 PSSBD0 1 0 :1:0 
+`uc 1 PSSBD1 1 0 :1:1 
+`uc 1 PSSAC0 1 0 :1:2 
+`uc 1 PSSAC1 1 0 :1:3 
+`uc 1 ECCPAS0 1 0 :1:4 
+`uc 1 ECCPAS1 1 0 :1:5 
+`uc 1 ECCPAS2 1 0 :1:6 
+]
+[u S424 . 1 `S411 1 . 1 0 `S416 1 . 1 0 ]
+[v _ECCPASbits ECCPASbits `VES424  1 e 1 @23 ]
+"993
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S158 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :3:2 
+`uc 1 . 1 0 :1:5 
+`uc 1 VCFG 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"1029
+[s S165 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+]
+[s S171 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S174 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S177 . 1 `S158 1 . 1 0 `S165 1 . 1 0 `S171 1 . 1 0 `S174 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES177  1 e 1 @31 ]
+"1157
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+[s S57 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1172
+[u S64 . 1 `S57 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES64  1 e 1 @133 ]
+"1206
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S121 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"1221
+[u S128 . 1 `S121 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES128  1 e 1 @135 ]
+[s S234 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 OSFIE 1 0 :1:2 
+`uc 1 C1IE 1 0 :1:3 
+`uc 1 C2IE 1 0 :1:4 
+`uc 1 CCP1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 EEIE 1 0 :1:7 
+]
+"1278
+[s S243 . 1 `uc 1 T1IE 1 0 :1:0 
+`uc 1 T2IE 1 0 :1:1 
+`uc 1 . 1 0 :3:2 
+`uc 1 ECCPIE 1 0 :1:5 
+]
+[u S248 . 1 `S234 1 . 1 0 `S243 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES248  1 e 1 @140 ]
+"1505
+[v _ANSEL ANSEL `VEuc  1 e 1 @145 ]
+[s S100 . 1 `uc 1 ANS0 1 0 :1:0 
+`uc 1 ANS1 1 0 :1:1 
+`uc 1 ANS2 1 0 :1:2 
+`uc 1 ANS3 1 0 :1:3 
+`uc 1 ANS4 1 0 :1:4 
+`uc 1 ANS5 1 0 :1:5 
+`uc 1 ANS6 1 0 :1:6 
+`uc 1 ANS7 1 0 :1:7 
+]
+"1522
+[u S109 . 1 `S100 1 . 1 0 ]
+[v _ANSELbits ANSELbits `VES109  1 e 1 @145 ]
+"1566
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2043
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S138 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 ADCS 1 0 :3:4 
+]
+"2066
+[s S141 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+]
+[u S146 . 1 `S138 1 . 1 0 `S141 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES146  1 e 1 @159 ]
+"33 /home/waldo/Documents/Geeken/Projects/PETOETJE/PIC16_L6206.X/main.c
+[v _do_stuff do_stuff `uc  1 e 1 0 ]
+"34
+[v _pwm_val pwm_val `ui  1 e 2 0 ]
+"39
+[v _main main `(v  1 e 1 0 ]
+{
+"59
+[v main@adc adc `ui  1 a 2 4 ]
+"99
+} 0
+"185
+[v _set_duty set_duty `(v  1 e 1 0 ]
+{
+[v set_duty@duty duty `ui  1 p 2 4 ]
+"190
+} 0
+"173
+[v _do_adc do_adc `(ui  1 e 2 0 ]
+{
+"174
+[v do_adc@tmp tmp `ui  1 a 2 0 ]
+"183
+} 0
+"136
+[v _configure_tmr configure_tmr `(v  1 e 1 0 ]
+{
+"147
+} 0
+"149
+[v _configure_pwm configure_pwm `(v  1 e 1 0 ]
+{
+"171
+} 0
+"104
+[v _configure_ports configure_ports `(v  1 e 1 0 ]
+{
+"124
+} 0
+"126
+[v _configure_adc configure_adc `(v  1 e 1 0 ]
+{
+"134
+} 0
+"192
+[v _inter inter `II(v  1 e 1 0 ]
+{
+"197
+} 0
